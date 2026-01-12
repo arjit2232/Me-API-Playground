@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Me-API Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <section>
+        <div style="display: flex; justify-content: space-between; align-items: center">
+          <div>
+            <h1 id="nameDisplay">Your Name</h1>
+            <p id="emailDisplay">you@example.com</p>
+          </div>
+          <div class="pill">
+            <span class="badge-dot"></span>
+            <span>Available for backend roles</span>
+          </div>
+        </div>
+        <p id="educationDisplay" style="margin-top: 12px"></p>
+
+        <h2>Tech Stack</h2>
+        <div class="stack-badges" id="skillsDisplay"></div>
+
+        <h2>Projects</h2>
+        <div class="projects" id="projectsDisplay"></div>
+
+        <h2>Work Links</h2>
+        <div class="links" id="linksDisplay"></div>
+
+        <div style="margin-top: 16px" id="healthStatus" class="health">
+          <span class="badge-dot"></span>
+          <span>Checking API health...</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Edit Profile (hits the API)</h2>
+        <form id="profileForm">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <br />
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <br />
+          <label>
+            Education
+            <textarea name="education" rows="2"></textarea>
+          </label>
+          <br />
+          <label>
+            Skills (comma separated)
+            <input type="text" name="skills" />
+          </label>
+          <br />
+          <label>
+            Projects (JSON array)
+            <textarea
+              name="projects"
+              rows="4"
+              placeholder='[{"title":"Me-API","description":"...","links":["https://..."]}]'
+            ></textarea>
+          </label>
+          <br />
+          <label>
+            GitHub URL
+            <input type="url" name="github" />
+          </label>
+          <br />
+          <label>
+            LinkedIn URL
+            <input type="url" name="linkedin" />
+          </label>
+          <br />
+          <label>
+            Portfolio URL
+            <input type="url" name="portfolio" />
+          </label>
+          <br />
+          <button type="submit">Save via PUT /api/profile</button>
+          <div class="status" id="status"></div>
+        </form>
+      </section>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+  </html>
+

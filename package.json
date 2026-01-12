@@ -1,0 +1,24 @@
+{
+  "name": "me-api-playground",
+  "version": "1.0.0",
+  "description": "Backend assessment: simple API and frontend exposing a candidate profile stored in MongoDB",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "seed": "node src/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
+
