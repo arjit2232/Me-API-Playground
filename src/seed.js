@@ -32,7 +32,7 @@ async function seed() {
       workLinks: {
         github: 'https://github.com/arjit2232',
         linkedin: 'https://www.linkedin.com/in/arjit-tiwari-512b21264/',
-        portfolio: 'https://your-portfolio.example.com'
+        portfolio: 'https://github.com/arjit2232/Resume/blob/main/resume12012026.pdf'
       }
     });
 
